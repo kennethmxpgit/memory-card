@@ -15,7 +15,7 @@ function App() {
    */
   function ScoreBoard(){
     return (
-      <div class='scoreBoard'>
+      <div id='scoreBoard'>
           <span>Score : {score}</span>
           <span>High Score : {highScore}</span>
       </div>
@@ -23,7 +23,7 @@ function App() {
   }
   function StartScreen(){
     return(
-      <div class='centerMe mainScreen'>
+      <div class='centerMe'>
         <div>
           <h1>INSTRUCTIONS</h1>
         </div>
@@ -37,7 +37,7 @@ function App() {
   
   function GameOverScreen(){
     return(
-      <div class='centerMe mainScreen'>
+      <div class='centerMe'>
         <div>
           <h1>GAME OVER</h1>
         </div>
@@ -56,12 +56,14 @@ function App() {
         {gameState===1 ? null:null}
         {gameState===2 ? GameOverScreen():null}
         {gameState===3 ? 
-        <div class='mainScreen'>
+        <div>
           <Card cid='14' />
+          <Card cid='12' />
         </div>:null}
-        {ScoreBoard()}
+        
         
       </div>
+      {ScoreBoard()}
       <div id="footer">
       <i class="fab fa-github"></i>
       <a href='https://github.com/kennethmxpgit/memory-card'>&nbsp;kennethmxp</a>

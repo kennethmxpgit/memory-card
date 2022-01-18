@@ -1,0 +1,16 @@
+.cardContainer{
+    box-sizing: border-box;
+    width:25vh;
+    padding:1%;
+    transition:all 0.2s;
+}
+.cardPic{
+    width:100%;
+}
+.cardText{
+    width:100%;
+    text-align: center;
+}
+.cardContainer:hover{
+    transform:translateY(-2%);
+}

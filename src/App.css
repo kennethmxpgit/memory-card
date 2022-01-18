@@ -7,7 +7,6 @@ a:visited{
 *{
   margin:0;
   user-select:none;
-  font-size:2.5vh;
 }
 html{
   font-family: 'Roboto Condensed', sans-serif;
@@ -27,7 +26,7 @@ html{
 #content{
   width:auto;
   height:auto;
-  height:90vh;
+  height:82vh;
 
 }
 
@@ -48,17 +47,16 @@ html{
   flex-direction: column;
   gap:5%;
 }
-.mainScreen{
-  height:86vh;
-}
 
 h1{
   font-size:7vh;
 }
-.scoreBoard{
+#scoreBoard{
+  height:8vh;
   width:auto;
   display:flex;
   align-items: center;
   justify-content: center;
   gap:5%;
+  font-size:3.5vh;
 }
