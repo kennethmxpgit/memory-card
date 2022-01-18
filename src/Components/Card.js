@@ -24,10 +24,9 @@ export default function Card(props){
         'Yondu',
         'Drax'
     ]
+    const filePath='./images/1.jfif'
     return(
         <div>
-            Your card is : {cardData[props.cid]}
-            <img src="0.jpg"></img>
         </div>
     )
 }
