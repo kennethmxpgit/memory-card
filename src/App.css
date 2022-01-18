@@ -60,3 +60,30 @@ h1{
   gap:5%;
   font-size:3.5vh;
 }
+
+.mainScreen{
+  height:82vh;
+}
+
+.mainScreen button{
+  box-sizing:border-box;
+  font-size:5vh;
+  padding:3%;
+  background-color: white;
+}
+.mainScreen button:hover{
+  background-color:black;
+  color:white;
+}
+#scoreBoard button{
+  background-color: inherit;
+  background:none;
+  font:inherit;
+  font-size:inherit;
+}
+#scoreBoard button:hover{
+  background-color: black;
+  color:white;
+}
+
+
