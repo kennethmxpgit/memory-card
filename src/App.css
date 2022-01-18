@@ -70,6 +70,7 @@ h1{
   font-size:5vh;
   padding:3%;
   background-color: white;
+  transition:all 0.2s;
 }
 .mainScreen button:hover{
   background-color:black;
@@ -80,6 +81,7 @@ h1{
   background:none;
   font:inherit;
   font-size:inherit;
+  transition:all 0.2s;
 }
 #scoreBoard button:hover{
   background-color: black;

@@ -24,11 +24,18 @@ export default function Card(props){
         {pic:require('./images/p18.jfif'),name:'Gamora'},
         {pic:require('./images/p19.jfif'),name:'Yondu'},
     ]
+    console.log('the cid is '+ props.cid);
 
-    return(
-        <div class='cardContainer'>
-            <img class='cardPic' src={cardData[props.cid].pic}></img>
-            <div class='cardText'>{cardData[props.cid].name}</div>
-        </div>
-    )
+    if(props.cid){
+        return(
+            <div class='cardContainer'>
+                <img class='cardPic' src={cardData[props.cid].pic}></img>
+                <div class='cardText'>{cardData[props.cid].name}</div>
+            </div>
+        )
+    } else return(
+        <div></div>
+    );
+
+
 }

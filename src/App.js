@@ -5,7 +5,7 @@ import GameHandler from './Components/GameHandler'
 
 
 function App() {
-  const [gameState,setGameState]=useState(1);
+  const [gameState,setGameState]=useState(0);
   const [score,setScore]=useState(0);
   const [highScore,setHighScore]=useState(0);
   /* gameState
@@ -55,7 +55,7 @@ function App() {
       <div id="header">MARVEL MEMORY CARD GAME</div>
       <div id="content">
         {gameState===0 ? StartScreen():null}
-        {gameState===1 ? <GameHandler/>:null}
+        {gameState===1 ? <GameHandler setGameState={setGameState}/>:null}
         {gameState===2 ? GameOverScreen():null}
         {gameState===3 ? 
         <div>
