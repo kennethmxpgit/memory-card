@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.4c5ab2cc.css",
+    "main.js": "/memory-card/static/js/main.625ca8ea.js",
+    "static/js/787.18e80cc0.chunk.js": "/memory-card/static/js/787.18e80cc0.chunk.js",
+    "static/media/p10.jfif": "/memory-card/static/media/p10.c8552aa7dc261bbff4f1.jfif",
+    "static/media/p8.jfif": "/memory-card/static/media/p8.ae08a89596276088c730.jfif",
+    "static/media/p1.jfif": "/memory-card/static/media/p1.c3f69db5454d8fe9c2af.jfif",
+    "static/media/p13.jfif": "/memory-card/static/media/p13.05874976ff2af62c1d63.jfif",
+    "static/media/p5.jfif": "/memory-card/static/media/p5.988450eb421a00c9934a.jfif",
+    "static/media/p7.jfif": "/memory-card/static/media/p7.47fbd994defd73bf48e6.jfif",
+    "static/media/p3.jfif": "/memory-card/static/media/p3.7c76e3208bc07591e7a3.jfif",
+    "static/media/p16.jfif": "/memory-card/static/media/p16.83912c2a2e907e8fc135.jfif",
+    "static/media/p0.jfif": "/memory-card/static/media/p0.b4c3726a77b7de40df68.jfif",
+    "static/media/p12.jfif": "/memory-card/static/media/p12.247ebbb639911e13a8c0.jfif",
+    "static/media/p4.jfif": "/memory-card/static/media/p4.edb673e553b1e88d1283.jfif",
+    "static/media/p19.jfif": "/memory-card/static/media/p19.be606a12907cc83a281c.jfif",
+    "static/media/p6.jfif": "/memory-card/static/media/p6.d24441e1d4db27111f4f.jfif",
+    "static/media/p17.jfif": "/memory-card/static/media/p17.5777efb4e0a13ddfbba5.jfif",
+    "static/media/p11.jfif": "/memory-card/static/media/p11.aecdb939814539c2afed.jfif",
+    "static/media/p15.jfif": "/memory-card/static/media/p15.8fd86907f79bf347011c.jfif",
+    "static/media/p2.jfif": "/memory-card/static/media/p2.d40d7698d6e4e43631f1.jfif",
+    "static/media/p14.jfif": "/memory-card/static/media/p14.3429e2d55d2d1c52de75.jfif",
+    "static/media/p9.jfif": "/memory-card/static/media/p9.ef9c14b047147edd5965.jfif",
+    "static/media/p18.jfif": "/memory-card/static/media/p18.8922d5dfa8b85048acff.jfif",
+    "index.html": "/memory-card/index.html",
+    "main.4c5ab2cc.css.map": "/memory-card/static/css/main.4c5ab2cc.css.map",
+    "main.625ca8ea.js.map": "/memory-card/static/js/main.625ca8ea.js.map",
+    "787.18e80cc0.chunk.js.map": "/memory-card/static/js/787.18e80cc0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c5ab2cc.css",
+    "static/js/main.625ca8ea.js"
+  ]
+}
