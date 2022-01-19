@@ -17,7 +17,8 @@ function App() {
   function scoreUp(){
     setScore(score+1);
   }
-  useEffect(()=>{
+
+  React.useEffect(()=>{
     if(score>highScore) setHighScore(score);
     if(score>19) setGameState(2);
   },[score])
