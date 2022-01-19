@@ -19,15 +19,16 @@ html{
   display:flex;
   align-items:center;
   justify-content: center;
-  font-size:4vh;
+  font-size:150%;
   color:white;
 }
 
 #content{
-  width:auto;
-  height:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height:82vh;
-
+  overflow: auto;
 }
 
 #footer{
@@ -38,7 +39,7 @@ html{
   display:flex;
   align-items:center;
   justify-content: center;
-  font-size:2vh;
+  font-size:1em;
 }
 .centerMe{
   display:flex;
@@ -65,6 +66,14 @@ h1{
   height:82vh;
 }
 
+#gameCardContainer{
+  height:80%;
+}
+
+.mainScreen div{
+  max-width: 95vw;
+  text-align: center;
+}
 .mainScreen button{
   box-sizing:border-box;
   font-size:5vh;
@@ -75,6 +84,11 @@ h1{
 .mainScreen button:hover{
   background-color:black;
   color:white;
+}
+
+#scoreBoard span{
+  font-size:1.5rem;
+
 }
 #scoreBoard button{
   background-color: inherit;

@@ -24,17 +24,18 @@ export default function GameHandler(props){
         return shownMap;
     }
     function randomize(){
+        const num=6; //number of shown cards
         //gives random number 0-19. no duplicates
         //sends it to shownCard state
         let d=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
         d = d.sort(() => Math.random() - 0.5);
-        let sliced=d.slice(0,5);
+        let sliced=d.slice(0,num);
 
         if(gameDeck[0]!=undefined){
             let loopAgain=true;
             while(loopAgain){//checks if all shown are selected already
                 d = d.sort(() => Math.random() - 0.5);
-                sliced=d.slice(0,5);
+                sliced=d.slice(0,num);
                 sliced.forEach((el)=>{
                     //console.log(el);
                     if(gameDeck[el].isSelected==false) loopAgain=false;

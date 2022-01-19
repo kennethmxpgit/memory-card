@@ -35,12 +35,15 @@ export default function Card(props){
         )
     }
     return(
-        <div >
+            
+            <div id='gameCardContainer'>
             {(props.shownCards==undefined) ? null: 
-                <div id='gameCardContainer'>
-                {props.shownCards.map((el)=>drawCard(el))}
-                </div>}
-        </div>
+                
+                props.shownCards.map((el)=>drawCard(el))
+                }
+            </div>
+
+
         
     )
 
