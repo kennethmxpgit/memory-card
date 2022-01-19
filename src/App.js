@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react/cjs/react.development';
 import './App.css';
 import GameHandler from './Components/GameHandler'
 
@@ -13,12 +14,23 @@ function App() {
   2 : gameover
   3 : testScreen
    */
+  function scoreUp(){
+    setScore(score+1);
+  }
+  useEffect(()=>{
+    if(score>highScore) setHighScore(score);
+    if(score>19) setGameState(2);
+  },[score])
+
+  function scoreReset(){
+    setScore(0);
+  }
   function ScoreBoard(){
     return (
       <div id='scoreBoard'>
           <span>Score : {score}</span>
           <span>High Score : {highScore}</span>
-          <button onClick={()=>setGameState(0)}>Reset</button>
+          <button onClick={()=>playAgain(true)}>Reset</button>
       </div>
     )
   }
@@ -35,17 +47,29 @@ function App() {
       </div>
     )
   }
-  
+  function playAgain(highScoreReset){
+    setGameState(0);
+    scoreReset();
+    if(highScoreReset) setHighScore(0);
+  }
   function GameOverScreen(){
+
     return(
       <div class='centerMe mainScreen'>
-        <div>
-          <h1>GAME OVER</h1>
-        </div>
+        
+          {(score>19)?
+          <div>
+            <h1>YOU WIN</h1>
+          </div>:
+          <div>
+              <h1>GAME OVER</h1>
+          </div>}
+          
+        
         <div>
           YOUR SCORE IS {score}
         </div>
-        <button onClick={()=>setGameState(0)}>PLAY AGAIN</button>
+        <button onClick={()=>playAgain(false)}>PLAY AGAIN</button>
       </div>
     )
   }
@@ -54,7 +78,7 @@ function App() {
       <div id="header">MARVEL MEMORY CARD GAME</div>
       <div id="content">
         {gameState===0 ? StartScreen():null}
-        {gameState===1 ? <GameHandler setGameState={setGameState}/>:null}
+        {gameState===1 ? <GameHandler score={score} scoreUp={scoreUp} scoreReset={scoreReset} setGameState={setGameState}/>:null}
         {gameState===2 ? GameOverScreen():null}
       </div>
       {ScoreBoard()}

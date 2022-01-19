@@ -28,7 +28,7 @@ export default function Card(props){
 
     const drawCard=(cid)=>{
         return(
-            <div class='cardContainer gameCard'>
+            <div class='cardContainer gameCard' onClick={()=>props.pickCard(cid)}>
                 <img class='cardPic' src={cardData[cid].pic}></img>
                 <div class='cardText'>{cardData[cid].name}</div>
             </div>
