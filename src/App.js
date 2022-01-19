@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import Card from './Components/Card';
 import GameHandler from './Components/GameHandler'
 
 
@@ -57,11 +56,6 @@ function App() {
         {gameState===0 ? StartScreen():null}
         {gameState===1 ? <GameHandler setGameState={setGameState}/>:null}
         {gameState===2 ? GameOverScreen():null}
-        {gameState===3 ? 
-        <div>
-          <Card cid='14' />
-          <Card cid='12' />
-        </div>:null}
       </div>
       {ScoreBoard()}
       <div id="footer">

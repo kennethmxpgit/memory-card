@@ -2,6 +2,7 @@ import React from 'react'
 import './Card.css'
 
 export default function Card(props){
+    
     const cardData=[
         {pic:require('./images/p0.jfif'),name:'Iron-Man'},
         {pic:require('./images/p1.jfif'),name:'Thor'},
@@ -24,18 +25,24 @@ export default function Card(props){
         {pic:require('./images/p18.jfif'),name:'Gamora'},
         {pic:require('./images/p19.jfif'),name:'Yondu'},
     ]
-    console.log('the cid is '+ props.cid);
 
-    if(props.cid){
+    const drawCard=(cid)=>{
         return(
-            <div class='cardContainer'>
-                <img class='cardPic' src={cardData[props.cid].pic}></img>
-                <div class='cardText'>{cardData[props.cid].name}</div>
+            <div class='cardContainer gameCard'>
+                <img class='cardPic' src={cardData[cid].pic}></img>
+                <div class='cardText'>{cardData[cid].name}</div>
             </div>
         )
-    } else return(
-        <div></div>
-    );
+    }
+    return(
+        <div >
+            {(props.shownCards==undefined) ? null: 
+                <div id='gameCardContainer'>
+                {props.shownCards.map((el)=>drawCard(el))}
+                </div>}
+        </div>
+        
+    )
 
 
 }
